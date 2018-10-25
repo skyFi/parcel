@@ -434,34 +434,34 @@ all), but here's an example of a `.parcelrc` file that contains every field:
 
 ```json
 {
-  "extends": ["@parcel/config-default"],
-  "resolvers": ["@parcel/resolver-default"],
-  "bundler": "@parcel/bundler-default",
+  "extends": ["@yongle/config-default"],
+  "resolvers": ["@yongle/resolver-default"],
+  "bundler": "@yongle/bundler-default",
   "transforms": {
-    "*.vue": ["@parcel/transform-vue"],
-    "*.scss": ["@parcel/transform-sass"],
-    "*.js": ["@parcel/transform-babel"],
-    "*.css": ["@parcel/transform-postcss"],
-    "*.html": ["@parcel/transform-posthtml"],
+    "*.vue": ["@yongle/transform-vue"],
+    "*.scss": ["@yongle/transform-sass"],
+    "*.js": ["@yongle/transform-babel"],
+    "*.css": ["@yongle/transform-postcss"],
+    "*.html": ["@yongle/transform-posthtml"],
   },
   "packagers": {
-    "*.js": "@parcel/packager-js",
-    "*.css": "@parcel/packager-css",
-    "*.html": "@parcel/packager-html",
-    "*.wasm": "@parcel/packager-wasm",
-    "*.raw": "@parcel/packager-raw"
+    "*.js": "@yongle/packager-js",
+    "*.css": "@yongle/packager-css",
+    "*.html": "@yongle/packager-html",
+    "*.wasm": "@yongle/packager-wasm",
+    "*.raw": "@yongle/packager-raw"
   },
   "optimizers": {
-    "*.js": ["@parcel/optimizer-uglify"],
-    "*.css": ["@parcel/optimizer-cssnano"],
-    "*.html": ["@parcel/optimizer-htmlnano"],
-    "*.{png,jpg,jpeg,svg,...}": ["@parcel/optimizer-imagemin"]
+    "*.js": ["@yongle/optimizer-uglify"],
+    "*.css": ["@yongle/optimizer-cssnano"],
+    "*.html": ["@yongle/optimizer-htmlnano"],
+    "*.{png,jpg,jpeg,svg,...}": ["@yongle/optimizer-imagemin"]
   },
   "loaders": {
-    "*.js": "@parcel/loader-js",
-    "*.wasm": "@parcel/loader-wasm"
+    "*.js": "@yongle/loader-js",
+    "*.wasm": "@yongle/loader-wasm"
   },
-  "reporters": ["@parcel/reporter-detailed"]
+  "reporters": ["@yongle/reporter-detailed"]
 }
 ```
 
@@ -493,9 +493,9 @@ configs to extend. That base configuration can be the path to another
 
 ```json
 {
-  "extends": "@parcel/config-default",
+  "extends": "@yongle/config-default",
   "extends": "../.parcelrc",
-  "extends": ["@parcel/config-default", "@company/parcel-config"]
+  "extends": ["@yongle/config-default", "@company/parcel-config"]
 }
 ```
 
@@ -508,7 +508,7 @@ package.
 
 ```json
 {
-  "resolvers": ["@parcel/resolver-default"]
+  "resolvers": ["@yongle/resolver-default"]
 }
 ```
 
@@ -521,7 +521,7 @@ See [Resolvers](#resolvers)
 ```json
 {
   "transforms": {
-    "*.js": ["@parcel/transform-babel"]
+    "*.js": ["@yongle/transform-babel"]
   }
 }
 ```
@@ -534,7 +534,7 @@ See [Transforms](#transforms)
 
 ```json
 {
-  "bundler": "@parcel/bundler-v1"
+  "bundler": "@yongle/bundler-v1"
 }
 ```
 
@@ -547,7 +547,7 @@ See [Bundlers](#bundlers)
 ```json
 {
   "packagers": {
-    "*.js": ["@parcel/packager-js"]
+    "*.js": ["@yongle/packager-js"]
   }
 }
 ```
@@ -561,7 +561,7 @@ See [Packagers](#packagers)
 ```json
 {
   "optimizers": {
-    "*.js": ["@parcel/optimizer-uglify"]
+    "*.js": ["@yongle/optimizer-uglify"]
   }
 }
 ```
@@ -576,8 +576,8 @@ See [Optimizers](#optimizers)
 ```json
 {
   "loaders": {
-    "*.js": "@parcel/loader-js",
-    "*.wasm": "@parcel/loader-wasm"
+    "*.js": "@yongle/loader-js",
+    "*.wasm": "@yongle/loader-wasm"
   }
 }
 ```
@@ -590,7 +590,7 @@ See [Loaders](#loaders)
 
 ```json
 {
-  "reporters": ["@parcel/reporter-detailed"]
+  "reporters": ["@yongle/reporter-detailed"]
 }
 ```
 
@@ -884,13 +884,13 @@ See [Asset Resolution](#asset-resolution) for more details.
 
 ```json
 {
-  "resolvers": ["@parcel/resolver-v1"]
+  "resolvers": ["@yongle/resolver-v1"]
 }
 ```
 
 **Official Resolvers:**
 
-- `@parcel/resolver-v1`
+- `@yongle/resolver-v1`
 
 ### Transforms
 
@@ -900,32 +900,32 @@ asset graph. They mostly call out to different compilers and preprocessors.
 ```json
 {
   "transforms": {
-    "*.js": ["@parcel/transform-babel"]
+    "*.js": ["@yongle/transform-babel"]
   }
 }
 ```
 
 **Official Transforms:**
 
-- `@parcel/transform-babel`
-- `@parcel/transform-coffeescript`
-- `@parcel/transform-graphql`
-- `@parcel/transform-json`
-- `@parcel/transform-json5`
-- `@parcel/transform-less`
-- `@parcel/transform-posthtml`
-- `@parcel/transform-postcss`
-- `@parcel/transform-pug`
-- `@parcel/transform-raw`
-- `@parcel/transform-reason`
-- `@parcel/transform-rust`
-- `@parcel/transform-stylus`
-- `@parcel/transform-toml`
-- `@parcel/transform-typescript`
-- `@parcel/transform-vue`
-- `@parcel/transform-wasm`
-- `@parcel/transform-webmanifest`
-- `@parcel/transform-yaml`
+- `@yongle/transform-babel`
+- `@yongle/transform-coffeescript`
+- `@yongle/transform-graphql`
+- `@yongle/transform-json`
+- `@yongle/transform-json5`
+- `@yongle/transform-less`
+- `@yongle/transform-posthtml`
+- `@yongle/transform-postcss`
+- `@yongle/transform-pug`
+- `@yongle/transform-raw`
+- `@yongle/transform-reason`
+- `@yongle/transform-rust`
+- `@yongle/transform-stylus`
+- `@yongle/transform-toml`
+- `@yongle/transform-typescript`
+- `@yongle/transform-vue`
+- `@yongle/transform-wasm`
+- `@yongle/transform-webmanifest`
+- `@yongle/transform-yaml`
 - ...
 
 ### Bundlers
@@ -935,13 +935,13 @@ Bundlers accept the entire asset graph and turn it into sets of bundles.
 
 ```json
 {
-  "bundler": "@parcel/bundler-v1"
+  "bundler": "@yongle/bundler-v1"
 }
 ```
 
 **Official Bundlers:**
 
-- `@parcel/bundler-v1`
+- `@yongle/bundler-v1`
 
 ### Packagers
 
@@ -950,18 +950,18 @@ Packagers determine how to merge different asset types into a single bundle.
 ```json
 {
   "packagers": {
-    "*.css": "@parcel/packager-css"
+    "*.css": "@yongle/packager-css"
   }
 }
 ```
 
 **Official Packagers:**
 
-- `@parcel/packager-html`
-- `@parcel/packager-js`
-- `@parcel/packager-css`
-- `@parcel/packager-wasm`
-- `@parcel/packager-raw`
+- `@yongle/packager-html`
+- `@yongle/packager-js`
+- `@yongle/packager-css`
+- `@yongle/packager-wasm`
+- `@yongle/packager-raw`
 
 ### Optimizers
 
@@ -971,16 +971,16 @@ of a single asset.
 ```json
 {
   "optimizers": {
-    "*.js": ["@parcel/optimizer-terser"],
-    "*.css": ["@parcel/optimizer-csso"]
+    "*.js": ["@yongle/optimizer-terser"],
+    "*.css": ["@yongle/optimizer-csso"]
   }
 }
 ```
 
 **Official Optimizers:**
 
-- `@parcel/packager-terser`
-- `@parcel/packager-csso`
+- `@yongle/packager-terser`
+- `@yongle/packager-csso`
 - [todo]
 
 ### Loaders
@@ -993,17 +993,17 @@ included in the final bundle.
 ```json
 {
   "loaders": {
-    "*.wasm": "@parcel/loader-wasm"
+    "*.wasm": "@yongle/loader-wasm"
   }
 }
 ```
 
 **Official Loaders:**
 
-- `@parcel/loader-js`
-- `@parcel/loader-css`
-- `@parcel/loader-wasm`
-- `@parcel/loader-raw`
+- `@yongle/loader-js`
+- `@yongle/loader-css`
+- `@yongle/loader-wasm`
+- `@yongle/loader-raw`
 
 ### Reporters
 
@@ -1013,16 +1013,16 @@ system.
 
 ```json
 {
-  "reporters": ["@parcel/reporter-pretty", "@parcel/reporter-visualizer"]
+  "reporters": ["@yongle/reporter-pretty", "@yongle/reporter-visualizer"]
 }
 ```
 
 **Official Reporters:**
 
-- `@parcel/reporter-pretty`
-- `@parcel/reporter-detailed`
-- `@parcel/reporter-graph`
-- `@parcel/reporter-visualizer`
+- `@yongle/reporter-pretty`
+- `@yongle/reporter-detailed`
+- `@yongle/reporter-graph`
+- `@yongle/reporter-visualizer`
 
 ## Creating Plugins
 
@@ -1032,14 +1032,14 @@ All plugins must follow a naming system:
 
 |            | Official package           | Community packages        | Private company/scoped team packages |
 | ---------- | -------------------------- | ------------------------- | ------------------------------------ |
-| Configs    | `@parcel/config-{name}`    | `parcel-config-{name}`    | `@scope/parcel-config-{name}`        |
-| Resolvers  | `@parcel/resolver-{name}`  | `parcel-resolver-{name}`  | `@scope/parcel-resolver-{name}`      |
-| Transforms | `@parcel/transform-{name}` | `parcel-transform-{name}` | `@scope/parcel-transform-{name}`     |
-| Loaders    | `@parcel/loader-{name}`    | `parcel-loader-{name}`    | `@scope/parcel-loader-{name}`        |
-| Bundlers   | `@parcel/bundler-{name}`   | `parcel-bundler-{name}`   | `@scope/parcel-bundler-{name}`       |
-| Packagers  | `@parcel/packager-{name}`  | `parcel-packager-{name}`  | `@scope/parcel-packager-{name}`      |
-| Namers     | `@parcel/namer-{name}`     | `parcel-namer-{name}`     | `@scope/parcel-namer-{name}`         |
-| Reporters  | `@parcel/reporter-{name}`  | `parcel-reporter-{name}`  | `@scope/parcel-reporter-{name}`      |
+| Configs    | `@yongle/config-{name}`    | `parcel-config-{name}`    | `@scope/parcel-config-{name}`        |
+| Resolvers  | `@yongle/resolver-{name}`  | `parcel-resolver-{name}`  | `@scope/parcel-resolver-{name}`      |
+| Transforms | `@yongle/transform-{name}` | `parcel-transform-{name}` | `@scope/parcel-transform-{name}`     |
+| Loaders    | `@yongle/loader-{name}`    | `parcel-loader-{name}`    | `@scope/parcel-loader-{name}`        |
+| Bundlers   | `@yongle/bundler-{name}`   | `parcel-bundler-{name}`   | `@scope/parcel-bundler-{name}`       |
+| Packagers  | `@yongle/packager-{name}`  | `parcel-packager-{name}`  | `@scope/parcel-packager-{name}`      |
+| Namers     | `@yongle/namer-{name}`     | `parcel-namer-{name}`     | `@scope/parcel-namer-{name}`         |
+| Reporters  | `@yongle/reporter-{name}`  | `parcel-reporter-{name}`  | `@scope/parcel-reporter-{name}`      |
 
 The `{name}` must be descriptive and directly related to the purpose of the
 package. Someone should be able to have an idea of what the package does simply
@@ -1136,7 +1136,7 @@ There are some rules that should be followed across every type of plugin:
 The plugin APIs all follow a common shape:
 
 ```js
-import { NameOfPluginType } from '@parcel/plugin';
+import { NameOfPluginType } from '@yongle/plugin';
 
 export default new NameOfPluginType({
   async methodName(opts: JSONObject): Promise<JSONObject> {
@@ -1163,7 +1163,7 @@ resolve. If the resolver isn't sure how to handle a request, it can also return
 `null` and pass it to the next resolver in the chain.
 
 ```js
-import { Resolver } from '@parcel/plugin';
+import { Resolver } from '@yongle/plugin';
 
 export default new Resolver({
   async resolve({ assetRequest }) {
@@ -1179,7 +1179,7 @@ Transforms _transform_ single assets as they are discovered and added to the
 asset graph. They mostly call out to different compilers and preprocessors.
 
 ```js
-import { Transform } from '@parcel/plugin';
+import { Transform } from '@yongle/plugin';
 
 export default new Transform({
   async config({ asset }) {
@@ -1208,7 +1208,7 @@ export default new Transform({
 Bundlers accept the entire asset graph and turn it into sets of bundles.
 
 ```js
-import { Bundler } from '@parcel/plugin';
+import { Bundler } from '@yongle/plugin';
 
 export default new Bundler({
   async resolve({ graph }) {
@@ -1223,7 +1223,7 @@ export default new Bundler({
 Packagers determine how to merge different asset types into a single bundle.
 
 ```js
-import { Packager } from '@parcel/plugin';
+import { Packager } from '@yongle/plugin';
 
 export default new Packager({
   async function package({ bundle }) {
@@ -1239,7 +1239,7 @@ Optimizers are similar to transformers, but they accept a bundle instead
 of a single asset.
 
 ```js
-import { Optimizer } from '@parcel/plugin';
+import { Optimizer } from '@yongle/plugin';
 
 export default new Optimizer({
   async optimize({ bundle }) {
@@ -1257,7 +1257,7 @@ Loaders get called after the bundler phase and generate an asset which gets
 included in the final bundle.
 
 ```js
-import { Loader } from '@parcel/plugin';
+import { Loader } from '@yongle/plugin';
 
 export default new Loader({
   async generate(opts) {
@@ -1274,7 +1274,7 @@ output to stdout/stderr or they can return assets to be generated on the file
 system.
 
 ```js
-import { Reporter } from '@parcel/plugin';
+import { Reporter } from '@yongle/plugin';
 
 export default new Reporter({
   async report({ event: { type, ... } }) {

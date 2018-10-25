@@ -99,7 +99,7 @@ All feedback and suggestions are welcome!
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute]](CONTRIBUTING.md).
-<a href="https://github.com/parcel-bundler/parcel/graphs/contributors"><img src="https://opencollective.com/parcel/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
+<a href="https://github.com/skyFi/parcel/graphs/contributors"><img src="https://opencollective.com/parcel/contributors.svg?width=890" title="contributors" alt="contributors" /></a>
 
 ## Backers
 
@@ -122,7 +122,7 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 <a href="https://opencollective.com/parcel/sponsor/8/website" target="_blank"><img src="https://opencollective.com/parcel/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/parcel/sponsor/9/website" target="_blank"><img src="https://opencollective.com/parcel/sponsor/9/avatar.svg"></a>
 
-## [Changelog](https://github.com/parcel-bundler/parcel/blob/master/CHANGELOG.md)
+## [Changelog](https://github.com/skyFi/parcel/blob/master/CHANGELOG.md)
 
 ## License
 

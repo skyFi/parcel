@@ -1029,7 +1029,7 @@ describe('scope hoisting', function() {
 
     it('supports removing an unused inline export with uglify minification', async function() {
       // Uglify does strange things to multiple assignments in a line.
-      // See https://github.com/parcel-bundler/parcel/issues/1549
+      // See https://github.com/skyFi/parcel/issues/1549
       let b = await bundle(
         path.join(
           __dirname,

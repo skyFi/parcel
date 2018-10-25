@@ -63,7 +63,7 @@ async function getConfig(asset) {
       cssnano(
         (await asset.getConfig(['cssnano.config.js'])) || {
           // Only enable safe css transforms if cssnano < 4
-          // See: https://github.com/parcel-bundler/parcel/issues/698
+          // See: https://github.com/skyFi/parcel/issues/698
           // See: https://github.com/ben-eb/cssnano/releases/tag/v4.0.0-rc.0
           safe: semver.satisfies(version, '<4.0.0-rc')
         }

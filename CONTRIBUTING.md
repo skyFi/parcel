@@ -6,7 +6,7 @@ See (and edit!) our public Wiki.
 
 Useful notes for new contributors:
 
-https://github.com/parcel-bundler/parcel/wiki/Contributing
+https://github.com/skyFi/parcel/wiki/Contributing
 
 We encourage you to create new pages or make helpful edits to all parts of the wiki. Try to ask before making major changes to pages you didn't create, but just do whatever you think is best. Feel free to make a user page and collect your notes there so everyone can learn.
 
@@ -16,7 +16,7 @@ Join our community platform on Spectrum: https://spectrum.chat/parcel
 
 If you want help or have questions about any aspect of Parcel development, ask there! We'll see and respond.
 
-It's important to us to give a good experience to new contributors, so anything you want to do is fair game. Feel free to come chat about it, or open a new [issue](https://github.com/parcel-bundler/parcel/issues/new) with RFC in the title.
+It's important to us to give a good experience to new contributors, so anything you want to do is fair game. Feel free to come chat about it, or open a new [issue](https://github.com/skyFi/parcel/issues/new) with RFC in the title.
 
 ## Overview
 
@@ -75,7 +75,7 @@ To do this, you have multiple options:
 
 * Another way, which we highly recommend if you plan to switch between different parcel sources often, is to create some terminal aliases. This way you can have different aliases for each of the versions of parcel you wish to maintain on your machine. For example, you can make an alias called `parcelfork` pointing to your fork of parcel for development, and then `parceldev` pointing to a clone of the parcel repo for experimenting with the latest changes, and then still keep the original `parcel` command pointing to the npm installed stable version. To do this, add some aliases to your terminal’s startup file (usually .bashrc) in the format `alias [name]=“node [path_to_new_parcel_bin_file]”` for each of the sources you want to use. For example: `alias parcelfork=“node ~/my/path/to/fork/bin/cli.js”`
 
-For more information on this topic, read [this issue on parcel repository](https://github.com/parcel-bundler/parcel/issues/182).
+For more information on this topic, read [this issue on parcel repository](https://github.com/skyFi/parcel/issues/182).
 
 ## Financial contributions
 

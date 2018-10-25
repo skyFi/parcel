@@ -1,13 +1,13 @@
 {
-  "name": "@parcel/babel-register",
+  "name": "@yongle/babel-register",
   "version": "1.10.4-alpha.0",
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/parcel-bundler/parcel.git"
+    "url": "https://github.com/skyFi/parcel.git"
   },
   "peerDependencies": {
     "@babel/core": "^7.0.0"

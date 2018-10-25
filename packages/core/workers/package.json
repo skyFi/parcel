@@ -1,12 +1,12 @@
 {
-  "name": "@parcel/workers",
+  "name": "@yongle/workers",
   "version": "1.10.4-alpha.0",
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parcel-bundler/parcel.git"
+    "url": "https://github.com/skyFi/parcel.git"
   },
   "engines": {
     "node": ">= 6.0.0"
@@ -24,5 +24,6 @@
   },
   "dependencies": {
     "physical-cpu-count": "^2.0.0"
-  }
+  },
+  "gitHead": "86ea54aaf58b1e515c4180114bc955fa9ce5777f"
 }

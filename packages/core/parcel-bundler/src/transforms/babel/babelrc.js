@@ -1,5 +1,5 @@
 const semver = require('semver');
-const logger = require('@parcel/logger');
+const logger = require('@yongle/logger');
 const path = require('path');
 const localRequire = require('../../utils/localRequire');
 const installPackage = require('../../utils/installPackage');
@@ -62,7 +62,7 @@ async function getBabelRc(asset, isSource) {
   }
 
   // Otherwise, don't load .babelrc for node_modules.
-  // See https://github.com/parcel-bundler/parcel/issues/13.
+  // See https://github.com/skyFi/parcel/issues/13.
   return null;
 }
 

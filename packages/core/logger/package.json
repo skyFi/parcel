@@ -1,12 +1,12 @@
 {
-  "name": "@parcel/logger",
+  "name": "@yongle/logger",
   "version": "1.10.4-alpha.0",
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parcel-bundler/parcel.git"
+    "url": "https://github.com/skyFi/parcel.git"
   },
   "engines": {
     "node": ">= 6.0.0"
@@ -28,5 +28,6 @@
     "grapheme-breaker": "^0.3.2",
     "ora": "^2.1.0",
     "strip-ansi": "^4.0.0"
-  }
+  },
+  "gitHead": "86ea54aaf58b1e515c4180114bc955fa9ce5777f"
 }

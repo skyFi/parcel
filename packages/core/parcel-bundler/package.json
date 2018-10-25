@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/parcel-bundler/parcel.git"
+    "url": "https://github.com/skyFi/parcel.git"
   },
   "files": [
     "bin/",
@@ -27,9 +27,9 @@
     "@babel/template": "^7.0.0",
     "@babel/traverse": "^7.0.0",
     "@babel/types": "^7.0.0",
-    "@parcel/logger": "^1.10.4-alpha.0",
-    "@parcel/watcher": "^1.10.4-alpha.0",
-    "@parcel/workers": "^1.10.4-alpha.0",
+    "@yongle/logger": "^1.10.4-alpha.0",
+    "@yongle/watcher": "^1.10.4-alpha.0",
+    "@yongle/workers": "^1.10.4-alpha.0",
     "ansi-to-html": "^0.6.4",
     "babylon-walk": "^1.0.2",
     "browserslist": "^4.1.0",
@@ -78,7 +78,7 @@
     "@babel/plugin-syntax-export-namespace-from": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-flow": "^7.0.0",
-    "@parcel/babel-register": "^1.10.4-alpha.0",
+    "@yongle/babel-register": "^1.10.4-alpha.0",
     "@vue/component-compiler-utils": "^2.0.0",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
@@ -145,5 +145,6 @@
   "collective": {
     "type": "opencollective",
     "url": "https://opencollective.com/parcel"
-  }
+  },
+  "gitHead": "86ea54aaf58b1e515c4180114bc955fa9ce5777f"
 }
