@@ -21,7 +21,7 @@ class LESSAsset extends Asset {
       (await this.getConfig(['.lessrc', '.lessrc.js'], {packageKey: 'less'})) ||
       {};
     opts.filename = this.name;
-    opts.plugins = (opts.plugins || []).concat(urlPlugin(this));
+    opts.plugins = (opts.plugins || []).concat(urlPlugin(this, opts));
 
     return await render(code, opts);
   }
@@ -43,15 +43,17 @@ class LESSAsset extends Asset {
   }
 }
 
-function urlPlugin(asset) {
+function urlPlugin(asset, opts) {
   return {
     install: (less, pluginManager) => {
       let visitor = new less.visitors.Visitor({
         visitUrl: node => {
-          node.value.value = asset.addURLDependency(
-            node.value.value,
-            node.currentFileInfo.filename
-          );
+          if (!opts.ignoreLessURLDependency) {
+            node.value.value = asset.addURLDependency(
+              node.value.value,
+              node.currentFileInfo.filename
+            );
+          }
           return node;
         }
       });
