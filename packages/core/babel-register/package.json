@@ -5,7 +5,6 @@
   "main": "index.js",
   "license": "MIT",
   "author": "skylor",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/skyFi/parcel.git"
@@ -16,5 +15,5 @@
   "dependencies": {
     "@babel/register": "^7.0.0"
   },
-  "gitHead": "2a344f3af01c3a7337378f748bd51390e39a6a3f"
+  "gitHead": "34007ab9d9ebd8c267625cd6b8b84a0d96f697a8"
 }

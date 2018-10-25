@@ -1,5 +1,5 @@
 {
-  "name": "parcel-bundler",
+  "name": "@yongle/parcel-bundler",
   "version": "1.10.5",
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
@@ -147,5 +147,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/parcel"
   },
-  "gitHead": "2a344f3af01c3a7337378f748bd51390e39a6a3f"
+  "gitHead": "34007ab9d9ebd8c267625cd6b8b84a0d96f697a8"
 }
