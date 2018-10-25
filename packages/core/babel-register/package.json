@@ -1,6 +1,6 @@
 {
   "name": "@yongle/babel-register",
-  "version": "1.10.4-alpha.0",
+  "version": "1.10.4",
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
   "license": "MIT",
