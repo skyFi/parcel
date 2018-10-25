@@ -4,6 +4,7 @@
   "description": "Blazing fast, zero configuration web application bundler",
   "main": "index.js",
   "license": "MIT",
+  "author": "skylor",
   "repository": {
     "type": "git",
     "url": "https://github.com/skyFi/parcel.git"
@@ -146,5 +147,5 @@
     "type": "opencollective",
     "url": "https://opencollective.com/parcel"
   },
-  "gitHead": "86ea54aaf58b1e515c4180114bc955fa9ce5777f"
+  "gitHead": "2a344f3af01c3a7337378f748bd51390e39a6a3f"
 }
